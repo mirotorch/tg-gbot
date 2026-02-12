@@ -3,10 +3,11 @@ import logging
 import os
 
 from aiogram import Bot, Dispatcher, F, types
-from aiogram.types import (CallbackQuery, InlineKeyboardButton,
-                           InlineKeyboardMarkup)
+from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
+from dotenv import load_dotenv
 from yt_dlp import YoutubeDL
 
+load_dotenv()
 API_TOKEN = os.getenv("GBOT_TOKEN")
 ADMIN_ID = os.getenv("GBOT_ADMIN_ID")
 

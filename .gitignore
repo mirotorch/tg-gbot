@@ -2,3 +2,4 @@ venv
 venv/
 downloads/
 authorized_users.txt
+.env
